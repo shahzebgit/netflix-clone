@@ -1,7 +1,26 @@
+import Jumbotron from "./components/jumbotron";
+import jumboData from "./fixtures/jumbo.json";
 
 function App() {
   return (
-    <p>Netflix</p>
+    <Jumbotron.Container>
+      {jumboData.map((item) => (
+        <Jumbotron key={item.id} direction={item.direction}>
+          {/* To keep text on Left */}
+          <Jumbotron.Pane>
+            <Jumbotron.Title>{item.title}</Jumbotron.Title>
+            <Jumbotron.SubTitle>{item.subTitle}</Jumbotron.SubTitle>
+          </Jumbotron.Pane>
+
+          {/*To keep image on right */}
+          <Jumbotron.Pane>
+            <Jumbotron.Image src={item.image} alt={item.image}>
+              {item.image}
+            </Jumbotron.Image>
+          </Jumbotron.Pane>
+        </Jumbotron>
+      ))}
+    </Jumbotron.Container>
   );
 }
 
