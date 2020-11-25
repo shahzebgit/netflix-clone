@@ -53,5 +53,12 @@ export const SubTitle = styled.h2`
 export const Image = styled.img`
   max-width: 100%;
   height: auto;
+
 `;
-export const Container = styled.div``;
+export const Container = styled.div`
+@media (max-width: 1000px) {
+    ${Item}:last-of-type h2{
+      margin-bottom:50px;
+    }
+  }
+`;

@@ -6,7 +6,7 @@ import {
   SubTitle,
   Image,
   Item,
-} from "./styles/jumbotron";
+} from "./styles/jumbotron-styles";
 
 export default function Jumbotron({
   children,
@@ -14,8 +14,8 @@ export default function Jumbotron({
   ...restProps
 }) {
   return (
-    <Item direction={direction}>
-      <Inner>{children}</Inner>
+    <Item >
+      <Inner direction={direction}>{children}</Inner>
     </Item>
   );
 }
