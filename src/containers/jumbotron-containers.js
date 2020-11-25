@@ -1,4 +1,3 @@
-// import Jumbotron from "../components/jumbotron/jumbotron-component";
 import { Jumbotron } from "../components";
 import jumboData from "../fixtures/jumbo.json";
 
