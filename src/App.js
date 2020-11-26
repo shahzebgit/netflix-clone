@@ -17,9 +17,6 @@ export default function App() {
       <Route exact path={ROUTES.HOME}>
         <Home />
       </Route>
-      <Route exact path={ROUTES.MAIN_PAGE}>
-        <Home />
-      </Route>
     </Router>
   );
 }
