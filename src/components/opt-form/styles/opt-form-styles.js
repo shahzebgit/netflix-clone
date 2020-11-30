@@ -1,11 +1,10 @@
-import styled from 'styled-components/macro';
+import styled from "styled-components/macro";
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   height: 100%;
-  margin-top: 20px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -14,13 +13,12 @@ export const Container = styled.div`
 `;
 
 export const Input = styled.input`
-  max-width: 420px;
+  max-width: 520px;
   width: 100%;
   border: 0;
   padding: 10px;
   height: 70px;
   box-sizing: border-box;
- 
 `;
 
 export const Break = styled.div`
@@ -39,7 +37,7 @@ export const Button = styled.button`
   padding: 0 32px;
   font-size: 20px;
   border: 0;
- 
+
   cursor: pointer;
   img {
     margin-left: 10px;

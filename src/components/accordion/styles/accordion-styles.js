@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from "styled-components/macro";
 
 export const Container = styled.div`
   display: flex;
@@ -33,7 +33,7 @@ export const Header = styled.div`
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  margin-bottom:1px;
+  margin-bottom: 1px;
   font-size: 26px;
   font-weight: normal;
   background: #303030;
@@ -54,7 +54,7 @@ export const Header = styled.div`
 
 export const Item = styled.div`
   color: white;
-  margin-bottom: 10px!important;
+  margin-bottom: 10px !important;
   margin: auto;
   max-width: 700px;
   width: 100%;
@@ -62,7 +62,6 @@ export const Item = styled.div`
     margin-top: 3em;
   }
 `;
-
 
 export const Body = styled.div`
   max-height: 1200px;
