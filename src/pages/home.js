@@ -11,14 +11,14 @@ export default function Home() {
         <Feature>
           <Feature.Title>Unlimited movies, TV shows and more.</Feature.Title>
           <Feature.SubTitle>Watch anywhere. Cancel anytime.</Feature.SubTitle>
+          <OptForm.Text>
+            Ready to watch? Enter your email to create or restart your
+            membership
+          </OptForm.Text>
           <OptForm>
             <OptForm.Input placeholder="Email Address" />
             <OptForm.Button>Try it Out now</OptForm.Button>
-            <OptForm.Break />
-            <OptForm.Text>
-              Ready to watch? Enter your email to create or restart your
-              membership
-            </OptForm.Text>
+         
           </OptForm>
         </Feature>
       </HeaderContainer>
@@ -26,7 +26,6 @@ export default function Home() {
       <JumbotronContainer />
       <FaqsContainer />
       <FooterContainer />
-      
     </>
   );
 }
