@@ -13,7 +13,6 @@ export function RedirectUser({ user, loggedInPath, children, ...rest }) {
 
         //redirect the user to Browse
         if (user) {
-          console.log("Im user -", loggedInPath);
           return <Redirect to={{ pathname: loggedInPath }} />;
         }
 
