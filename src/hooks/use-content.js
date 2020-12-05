@@ -13,12 +13,12 @@ export default function useContent(target) {
       .then((snapshot) => {
         const allContent = snapshot.docs.map((contentObj) => ({
           ...contentObj.data(),
-          docsID: contentObj.id,
+          docsId: contentObj.id,
         }));
         setContent(allContent);
       })
-      .catch((err) => {
-        console.error(err.message);
+      .catch((error) => {
+        console.error(error.message);
       });
   }, []);
   return { [target]: content };
