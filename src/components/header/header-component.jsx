@@ -17,7 +17,7 @@ import {
   Text,
   Feature,
   Logo,
-} from "./styles/header-styles";
+} from "./styles/header";
 
 export default function Header({ bg = true, children, ...restProps }) {
   return bg ? <Background {...restProps}>{children}</Background> : children;
