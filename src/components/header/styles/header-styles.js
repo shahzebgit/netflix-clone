@@ -10,7 +10,10 @@ export const Background = styled.div`
       rgba(0, 0, 0, 0.35),
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.35)
-    ),url(${({ src }) =>src ? `../images/misc/${src}.jpg` : "../images/misc/home-bg.jpg"})top left / cover no-repeat;
+    ),
+    url(${({ src }) =>
+        src ? `../images/misc/${src}.jpg` : "../images/misc/home-bg.jpg"})
+      top left / cover no-repeat;
 
   @media (max-width: 1100px) {
     ${({ dontShowOnSmallViewPort }) =>
@@ -59,6 +62,7 @@ export const SearchInput = styled.input`
   transition: width 0.5s;
   height: 30px;
   font-size: 14px;
+  border-radius: 5px;
   margin-left: ${({ active }) => (active === true ? "10px" : "0")};
   padding: ${({ active }) => (active === true ? "0 10px" : "0")};
   opacity: ${({ active }) => (active === true ? "1" : "0")};
