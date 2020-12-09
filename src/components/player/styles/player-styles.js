@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from "styled-components/macro";
 
 export const Container = styled.div``;
 
@@ -47,7 +47,6 @@ export const Close = styled.button`
     position: absolute;
     left: 10px;
     top: 0;
-    content: ' ';
     height: 22px;
     width: 2px;
     background-color: #333;
@@ -62,23 +61,22 @@ export const Close = styled.button`
 `;
 
 export const Button = styled.button`
-  background-color: #e50914;
-  border-color: #ff0a16;
-  width: 115px;
-  height: 45px;
-  text-transform: uppercase;
+  box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
+  
+  background-color: #ff1e1e;
+    color: white;
+  border-width: 0;
+  padding: 10px 35px;
+  border-radius: 5px;
+  max-width: 130px;
   font-weight: bold;
-  color: white;
-  font-size: 18px;
-  height: 45px;
+  font-size: 20px;
+  margin-top: 10px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 0;
+  transition: background-color 0.5s ease;
 
   &:hover {
-    transform: scale(1.05);
-    background-color: #ff0a16;
+    background-color: #e6e6e6;
+  color: #000;
   }
 `;
