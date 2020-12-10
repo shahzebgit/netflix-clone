@@ -5,6 +5,7 @@ import { Card, Header, Loading, Player } from "../components/";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
 import { FooterContainer } from "../containers/footer-container";
+import Fuse from "fuse.js";
 
 export function BrowseContainer({ slides }) {
   const [category, setCategory] = useState("series");
@@ -25,6 +26,28 @@ export function BrowseContainer({ slides }) {
   useEffect(() => {
     setSlideRows(slides[category]);
   }, [slides, category]);
+
+  useEffect(() => {
+    const options ={
+      shouldSort: true,
+      includeMatches: true,
+      includeScore:true,
+      threshold:0.5,
+      keys: [ "data.title",'data.description'],
+    }
+
+    const fuse = new Fuse(slideRows, options);
+
+    const results = fuse.search(searchTerm).map(({ item }) => item);
+    
+    if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
+      setSlideRows(results);
+    } else {
+      setSlideRows(slides[category]);
+    }
+    console.table(fuse.search(searchTerm))
+  }, [searchTerm]);
+ 
 
   return profile.displayName ? (
     <>
@@ -79,12 +102,11 @@ export function BrowseContainer({ slides }) {
             he projects in a futile attempt to feel like he's part of the world
             around him.
           </Header.Text>
-         
+
           <Player>
-                <Player.Button />
-                <Player.Video src="/videos/bunny.mp4" />
-              </Player>
-         
+            <Player.Button />
+            <Player.Video src="/videos/bunny.mp4" />
+          </Player>
         </Header.Feature>
       </Header>
 
