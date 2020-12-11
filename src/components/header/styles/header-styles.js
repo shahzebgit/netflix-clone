@@ -1,14 +1,20 @@
-import styled from 'styled-components/macro';
-import { Link as ReactRouterLink } from 'react-router-dom';
+import styled from "styled-components/macro";
+import { Link as ReactRouterLink } from "react-router-dom";
 
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
 
-  background: url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover
-    no-repeat;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.35)
+    ),url(${({ src }) =>src ? `../images/misc/${src}.jpg` : "../images/misc/home-bg.jpg"})top left / cover no-repeat;
+
   @media (max-width: 1100px) {
-    ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none;`}
+    ${({ dontShowOnSmallViewPort }) =>
+      dontShowOnSmallViewPort && `background: none;`}
   }
 `;
 
@@ -31,7 +37,7 @@ export const Link = styled.p`
   color: #fff;
   text-decoration: none;
   margin-right: 30px;
-  font-weight: ${({ active }) => (active === 'true' ? '700' : 'normal')};
+  font-weight: ${({ active }) => (active === "true" ? "700" : "normal")};
   cursor: pointer;
   &:hover {
     font-weight: bold;
@@ -53,10 +59,10 @@ export const SearchInput = styled.input`
   transition: width 0.5s;
   height: 30px;
   font-size: 14px;
-  margin-left: ${({ active }) => (active === true ? '10px' : '0')};
-  padding: ${({ active }) => (active === true ? '0 10px' : '0')};
-  opacity: ${({ active }) => (active === true ? '1' : '0')};
-  width: ${({ active }) => (active === true ? '200px' : '0px')};
+  margin-left: ${({ active }) => (active === true ? "10px" : "0")};
+  padding: ${({ active }) => (active === true ? "0 10px" : "0")};
+  opacity: ${({ active }) => (active === true ? "1" : "0")};
+  width: ${({ active }) => (active === true ? "200px" : "0px")};
 `;
 
 export const Search = styled.div`
@@ -88,13 +94,13 @@ export const ButtonLink = styled(ReactRouterLink)`
   height: fit-content;
   color: white;
   border: 0;
-  font-size:14px;
-  font-weight:540;
+  font-size: 14px;
+  font-weight: 540;
   border-radius: 3px;
   padding: 8px 17px;
-  margin-bottom:15px;
+  margin-bottom: 15px;
   cursor: pointer;
-  text-transform:capitalize;
+  text-transform: capitalize;
   text-decoration: none;
   box-sizing: border-box;
   &:hover {
