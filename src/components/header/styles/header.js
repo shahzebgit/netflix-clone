@@ -102,7 +102,6 @@ export const SearchIcon = styled.button`
 export const ButtonLink = styled(ReachRouterLink)`
   display: block;
   background-color: #e50914;
-  width: 60px;
   height: fit-content;
   color: white;
   border: 0;
@@ -121,8 +120,8 @@ export const Picture = styled.button`
   background: url(${({ src }) => src});
   background-size: contain;
   border: 0;
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 36px;
   cursor: pointer;
 `;
 

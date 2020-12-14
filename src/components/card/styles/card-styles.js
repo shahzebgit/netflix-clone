@@ -174,7 +174,7 @@ export const Content = styled.div`
 export const Maturity = styled.div`
   background-color: ${({ rating }) => (rating >= 15 ? "#f44336" : "#2f9600")};
   border-radius: 15px;
-  width: 28px;
+  width: 20px;
   line-height: 28px;
   text-align: center;
   color: white;
