@@ -25,8 +25,7 @@ export const Container = styled.div`
 
 export const Group = styled.div`
   display: flex;
-  flex-direction: ${({ flexDirection }) =>
-    flexDirection === "row" ? "row" : "column"};
+  flex-direction: ${({ flexDirection }) => flexDirection === "row" ? "row" : "column"};
   ${({ alignItems }) => alignItems && `align-items: ${alignItems}`};
   ${({ margin }) => margin && `margin: ${margin}`};
   > ${Container}:first-of-type {
