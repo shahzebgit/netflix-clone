@@ -1,10 +1,9 @@
 import {
   render,
   fireEvent,
-  getByTestId,
 } from "@testing-library/react";
 
-import { Player } from "../components";
+import { Player } from "../../components";
 
 describe("<Player/>", () => {
   it("render the <Player/> with bunny video", () => {
