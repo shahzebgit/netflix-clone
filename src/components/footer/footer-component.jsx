@@ -1,4 +1,12 @@
-import { Container, Row, Column, Text, Link, Title, Break } from "./styles/footer-styles";
+import {
+  Container,
+  Row,
+  Column,
+  Text,
+  Link,
+  Title,
+  Break,
+} from "./styles/footer-styles";
 
 export default function Footer({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;

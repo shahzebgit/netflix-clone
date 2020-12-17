@@ -62,9 +62,9 @@ export const Close = styled.button`
 
 export const Button = styled.button`
   box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
-  
+
   background-color: #ff1e1e;
-    color: white;
+  color: white;
   border-width: 0;
   padding: 10px 35px;
   border-radius: 5px;
@@ -77,6 +77,6 @@ export const Button = styled.button`
 
   &:hover {
     background-color: #e6e6e6;
-  color: #000;
+    color: #000;
   }
 `;

@@ -1,6 +1,6 @@
-export const MAIN_PAGE = '/';
-export const HOME = '/'
-export const BROWSE = '/browse';
-export const SIGN_UP = '/signup';
-export const SIGN_IN = '/signin';
-export const TERMS = 'https://policies.google.com/terms'
+export const MAIN_PAGE = "/";
+export const HOME = "/";
+export const BROWSE = "/browse";
+export const SIGN_UP = "/signup";
+export const SIGN_IN = "/signin";
+export const TERMS = "https://policies.google.com/terms";

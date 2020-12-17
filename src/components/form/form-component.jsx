@@ -34,8 +34,8 @@ Form.Base = function FormBase({ children, ...restProps }) {
   return <Base {...restProps}>{children} </Base>;
 };
 
-Form.Input = function FormInput({...restProps }) {
-  return <Input {...restProps}/>;
+Form.Input = function FormInput({ ...restProps }) {
+  return <Input {...restProps} />;
 };
 
 Form.Submit = function FormSubmit({ children, ...restProps }) {

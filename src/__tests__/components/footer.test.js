@@ -47,14 +47,12 @@ describe("<Footer/>", () => {
         <Footer.Text>Netflix India</Footer.Text>
       </Footer>
     );
-    
-        expect(getByText('Got any Questions? Contact Us')).toBeTruthy();
-        expect(getByText('FAQ')).toBeTruthy();
-        expect(getByText('Investor Relations')).toBeTruthy();
-        expect(getByText('Corporate Information')).toBeTruthy();
-        expect(getByText('Netflix Originals')).toBeTruthy();
-        expect(container.firstChild).toMatchSnapshot();
 
+    expect(getByText("Got any Questions? Contact Us")).toBeTruthy();
+    expect(getByText("FAQ")).toBeTruthy();
+    expect(getByText("Investor Relations")).toBeTruthy();
+    expect(getByText("Corporate Information")).toBeTruthy();
+    expect(getByText("Netflix Originals")).toBeTruthy();
+    expect(container.firstChild).toMatchSnapshot();
   });
-
 });

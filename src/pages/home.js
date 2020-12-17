@@ -18,7 +18,6 @@ export default function Home() {
           <OptForm>
             <OptForm.Input placeholder="Email Address" />
             <OptForm.Button>Try it Out now</OptForm.Button>
-         
           </OptForm>
         </Feature>
       </HeaderContainer>

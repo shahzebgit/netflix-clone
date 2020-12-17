@@ -51,7 +51,7 @@ export default function SignIn() {
             />
             <Form.Input
               type="password"
-              autoComplete='off'
+              autoComplete="off"
               placeholder="Password"
               value={password}
               onChange={({ target }) => setPassword(target.value)}
@@ -60,7 +60,7 @@ export default function SignIn() {
               Sign In
             </Form.Submit>
           </Form.Base>
-          
+
           <Form.TextSmall type="checkbox">Remember me</Form.TextSmall>
           {/* <Form.TextSmall type="checkbox">Remember me</Form.TextSmall> */}
 

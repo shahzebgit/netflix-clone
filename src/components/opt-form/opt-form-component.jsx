@@ -1,5 +1,11 @@
-import React from 'react';
-import { Container, Input, Break, Button, Text } from './styles/opt-form-styles';
+import React from "react";
+import {
+  Container,
+  Input,
+  Break,
+  Button,
+  Text,
+} from "./styles/opt-form-styles";
 
 export default function OptForm({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;

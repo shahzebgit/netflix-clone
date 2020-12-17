@@ -1,15 +1,19 @@
-import { Spinner, Picture, LockBody, ReleaseBody } from "./styles/loading-styles.js";
+import {
+  Spinner,
+  Picture,
+  LockBody,
+  ReleaseBody,
+} from "./styles/loading-styles.js";
 
 export default function Loading({ src, ...restProps }) {
   return (
-    <Spinner {...restProps} >
+    <Spinner {...restProps}>
       <LockBody />
       <Picture src={`images/users/${src}.png`} />
     </Spinner>
   );
 }
 
-
-Loading.ReleaseBody = function LoadingReleaseBody(){
-    return <ReleaseBody />
-}
+Loading.ReleaseBody = function LoadingReleaseBody() {
+  return <ReleaseBody />;
+};

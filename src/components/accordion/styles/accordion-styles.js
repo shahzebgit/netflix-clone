@@ -64,9 +64,9 @@ export const Item = styled.div`
   &:first-of-type {
     margin-top: 3em;
   }
-  
-  &::last-of-type{
-    margin-bottom:0;
+
+  &::last-of-type {
+    margin-bottom: 0;
   }
 `;
 
@@ -77,9 +77,9 @@ export const Body = styled.div`
   background: #303030;
   white-space: pre-wrap;
   user-select: none;
-  margin-bottom:3px;
+  margin-bottom: 3px;
   overflow: hidden;
-  
+
   &.closed {
     max-height: 0;
     overflow: hidden;

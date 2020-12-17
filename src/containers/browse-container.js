@@ -28,26 +28,25 @@ export function BrowseContainer({ slides }) {
   }, [slides, category]);
 
   useEffect(() => {
-    const options ={
+    const options = {
       shouldSort: true,
       includeMatches: true,
-      includeScore:true,
-      threshold:0.5,
-      keys: [ "data.title",'data.description'],
-    }
+      includeScore: true,
+      threshold: 0.5,
+      keys: ["data.title", "data.description"],
+    };
 
     const fuse = new Fuse(slideRows, options);
 
     const results = fuse.search(searchTerm).map(({ item }) => item);
-    
+
     if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
       setSlideRows(results);
     } else {
       setSlideRows(slides[category]);
     }
-    console.table(fuse.search(searchTerm))
+    console.table(fuse.search(searchTerm));
   }, [searchTerm]);
- 
 
   return profile.displayName ? (
     <>

@@ -1,7 +1,6 @@
 import { Jumbotron } from "../components";
 import jumboData from "../fixtures/jumbo.json";
 
-
 export function JumbotronContainer() {
   return (
     <Jumbotron.Container>
@@ -24,4 +23,3 @@ export function JumbotronContainer() {
     </Jumbotron.Container>
   );
 }
-
