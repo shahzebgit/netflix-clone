@@ -17,7 +17,7 @@
     "collectCoverageFrom": [
       "<rootDir>/src/**/*.{js,jsx}",
       "!<rootDir>/src/app.js",
-      "!<rootDir>/src/helpers/routes.js",
+      "!<rootDir>/src/components/helpers/routes.js",
       "!<rootDir>/src/lib/firebase.js",
       "!<rootDir>/src/lib/firebase.prod.js",
       "!<rootDir>/src/index.js",
