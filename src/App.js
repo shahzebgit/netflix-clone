@@ -4,7 +4,7 @@ import { Home, Browse, SignIn, SignUp } from "./pages";
 import { RedirectUser, ProtectedRoute } from "./components/helpers/routes";
 import { useAuthListener } from "./hooks";
 
-export default function App() {
+export function App() {
   const { user } = useAuthListener();
   return (
     <Router>
