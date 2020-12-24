@@ -70,7 +70,7 @@ export default function SignIn() {
 
           <Form.TextSmall>
             This page is protected by Google reCAPTCHA to ensure you're not a
-            bot. <Form.Link to="/">Learn more.</Form.Link>
+            bot. Learn more.
           </Form.TextSmall>
         </Form>
       </HeaderContainer>
