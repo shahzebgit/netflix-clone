@@ -16,7 +16,7 @@ export function App() {
           exact
         >
           <SignIn />
-        </RedirectUser>
+        </RedirectUser>̥̥ 
         <RedirectUser
           user={user}
           loggedInPath={ROUTES.BROWSE}
